@@ -17,6 +17,6 @@ public class Task02Main {
         }
         int size = 1 << n; // 2^n
         return IntStream.iterate(0, i -> (i + 1) % size)
-                .map(i -> i ^ (i >> 1)); // i XOR (i >> 1) — код Грея
+                .map(i -> i ^ (i >> 1)); // код Грея
     }
 }
